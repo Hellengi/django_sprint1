@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Публикация</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>{{ post.location }}</h1>
+    <p>{{ post.date }}</p>
+    <p>{{ post.text }}</p>
+    <a href="{% url 'blog:index' %}">Вернуться на главную</a>
+</body>
+</html>
